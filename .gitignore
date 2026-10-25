@@ -1,0 +1,7 @@
+*.log
+__pycache__/
+*.pyc
+local-routing/osrm/
+local-routing/runtime/
+.DS_Store
+Thumbs.db

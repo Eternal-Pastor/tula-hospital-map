@@ -1,0 +1,13 @@
+services:
+  osrm-car:
+    image: ${OSRM_IMAGE:-ghcr.io/project-osrm/osrm-backend:latest}
+    restart: unless-stopped
+    ports: ["127.0.0.1:5000:5000"]
+    volumes: ["./osrm/car:/data"]
+    command: ["osrm-routed", "--algorithm", "mld", "/data/region.osrm"]
+  osrm-foot:
+    image: ${OSRM_IMAGE:-ghcr.io/project-osrm/osrm-backend:latest}
+    restart: unless-stopped
+    ports: ["127.0.0.1:5001:5000"]
+    volumes: ["./osrm/foot:/data"]
+    command: ["osrm-routed", "--algorithm", "mld", "/data/region.osrm"]

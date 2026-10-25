@@ -1,0 +1,9 @@
+Vendored geometry libraries (no runtime CDN):
+
+d3-delaunay 6.0.4 — https://github.com/d3/d3-delaunay
+BSD-3-Clause; see d3-delaunay.LICENSE. Distribution includes Delaunator.
+
+clipper-lib 6.4.2 (JavaScript Clipper 6.4.2.2) — https://github.com/junmer/clipper-lib
+Boost Software License 1.0 — see clipper.LICENSE; https://www.boost.org/LICENSE_1_0.txt
+Original library: Angus Johnson; JavaScript translation: Timo.
+The original source, copyright, JSBN attributions and license links are retained in clipper.js.

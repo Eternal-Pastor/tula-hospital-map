@@ -1,0 +1,2 @@
+# Preserve the exact portable package bytes on every checkout.
+* -text
